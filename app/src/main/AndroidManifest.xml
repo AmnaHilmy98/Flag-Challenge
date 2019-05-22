@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.project.chefschoice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chefs_choice"
+        android:roundIcon="@drawable/chefs_choice"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.android.project.chefschoice.Activities.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.project.chefschoice.Activities.RecipeTitleActivity"
+            android:label="@string/select_a_recipe" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.RecipesActivity"
+            android:label="@string/select_ingredients_to_find" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.SearchActivity"
+            android:label="@string/search_product" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.EditPageActivity"
+            android:label="@string/edit_details" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.EditActivity"
+            android:label="@string/edit_product" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.AvailabilityActivity"
+            android:label="@string/display_kitchen" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.DisplayActivity"
+            android:label="@string/display_products" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.RegisterActivity"
+            android:label="@string/register_product" />
+        <activity
+            android:name="com.android.project.chefschoice.Activities.MainActivity"
+            android:label="@string/app_name"/>
+    </application>
+
+</manifest>
